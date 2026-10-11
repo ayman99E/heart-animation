@@ -1,0 +1,36 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+body {
+    position: relative;
+}
+
+#heartCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Keep the SVG available to JavaScript,
+   but invisible on the screen */
+#heartSvg {
+    position: absolute;
+    width: 600px;
+    height: 552px;
+    left: -10000px;
+    top: 0;
+    visibility: hidden;
+}
+
